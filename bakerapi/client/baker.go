@@ -6,7 +6,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/oden7777/grpc/api/gen/api"
+	"github.com/oden7777/grpc/bakerapi/api/gen/api"
 	"github.com/pkg/errors"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"

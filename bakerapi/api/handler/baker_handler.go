@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/oden7777/grpc/api/gen/api"
+	"github.com/oden7777/grpc/bakerapi/api/gen/api"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 	"google.golang.org/protobuf/types/known/timestamppb"
