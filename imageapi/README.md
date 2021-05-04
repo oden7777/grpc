@@ -1,4 +1,4 @@
-# baker API
+# Image Upload API
 
 ## generate server
 ```shell
@@ -12,7 +12,7 @@ $ protoc \
 # run server
 $ go run api/server/server.go
 # run example client
-$ go run cmd/client.go
+$ go run cmd/client.go /path/to/filepath
 ```
 
 ## more
@@ -22,8 +22,7 @@ $ grpc_cli ls localhost:50051
 # server info(detail)
 $ grpc_cli ls localhost:50051 -l
 # type info
-$ grpc_cli type localhost:50051 pancake.baker.Pancake
+$ grpc_cli type localhost:50051 image.uploader.ImageUploadRequest
 # call request
-$ grpc_cli call localhost:50051 pancake.baker.PancakeBakerService.Bake 'menu:1'
-$ grpc_cli call localhost:50051 pancake.baker.PancakeBakerService.Report ''
+# $ grpc_cli call localhost:50051 image.uploader.ImageUploadService.Upload 'file_meta:{filename:""}'
 ```
